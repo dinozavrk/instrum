@@ -128,7 +128,16 @@ person.sayHello();
 //_______________________________________________________
 
 console.log('номер 8')
-console.log('я не понял как его делать')
+
+const per = {
+    name: 'ivan',
+    age: 19
+}
+
+const newPer = {...per}
+per.age = 20
+console.log(newPer)
+
 
 //_______________________________________________________
 
@@ -175,7 +184,7 @@ const product = {
     applyDiscount: function(percent) {
 
         if (percent < 0 || percent > 100) {
-            console.log('Процент скидки не может быть отрицательным');
+            console.log('Процент скидки не может быть больше 100');
         }
         
 

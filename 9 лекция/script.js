@@ -22,9 +22,10 @@ const orders = [
   }
 ];
 
-console.log(orders.filter(item => item.items.includes('iphone')))
+console.log(orders.filter(item => item.items.includes('iPhone')))
 
 //filter это метод массива, который отбирает элементы по условию и возвращает новый массив
+//includes способ проверить наличие элемента в массиве или подстроки в строке.
 //_______________________________________________________________________________
 
 // 2 номер
@@ -126,17 +127,6 @@ console.log(admins);
 
 //_______________________________________________________________________________
 
-// 6 номер
-
-// не понял его
-
-//_______________________________________________________________________________
-
-// 7 номер
-
-// не понял его
-
-//_______________________________________________________________________________
 
 // 8 номер
 
@@ -180,36 +170,36 @@ console.log(...javaSkills);
 
 // 10 номер
 
-const usersFeedback = [
-    {
-        userId: 1,
-        feedback: 'Отличный товар',
-        usedProducts: ['Карандаш', 'Ластик']
-    },
-    {
-        userId: 2,
-        feedback: 'Очень понравился',
-        usedProducts: ['Ручка', 'Карандаш']
-    }
-];
+// const usersFeedback = [
+//     {
+//         userId: 1,
+//         feedback: 'Отличный товар',
+//         usedProducts: ['Карандаш', 'Ластик']
+//     },
+//     {
+//         userId: 2,
+//         feedback: 'Очень понравился',
+//         usedProducts: ['Ручка', 'Карандаш']
+//     }
+// ];
 
 
-const productStats = {};
+// const productStats = {};
 
-usersFeedback.forEach(review => {
+// usersFeedback.forEach(rev => {
 
-    const usedProducts = review.usedProducts;
+//     const usedProducts = rev.usedProducts;
     
-    usedProducts.forEach(product => {
-        if (productStats[product]) {
-            productStats[product]++;
-        } else {
-            productStats[product] = 1;
-        }
-    });
-});
+//     usedProducts.forEach(product => {
+//         if (productStats[product]) {
+//             productStats[product]++;
+//         } else {
+//             productStats[product] = 1;
+//         }
+//     });
+// });
 
-console.log(productStats);
+// console.log(productStats);
 
 
 
